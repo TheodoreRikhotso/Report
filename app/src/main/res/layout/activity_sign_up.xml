@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.example.admin.report.SignupActivity"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="108dp">
+    <ImageView
+        android:id="@+id/ivPhoto"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/profile_circular_border_imageview"
+        app:srcCompat="@drawable/add_" />
+</RelativeLayout>
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:id="@+id/edSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/edName"
+        android:layout_alignParentStart="true" />
+    <EditText
+    android:id="@+id/edContact"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:hint="Contact" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/tvGrade"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Role   " />
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:id="@+id/rgRole"
+
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Teacher" />
+
+            <RadioButton
+                android:id="@+id/rdStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Student" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grade" />
+
+        <RadioGroup
+            android:id="@+id/rgGrade"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbG8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8" />
+
+            <RadioButton
+                android:id="@+id/rbG9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9" />
+
+            <RadioButton
+                android:id="@+id/rbG10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="10" />
+
+            <RadioButton
+                android:id="@+id/rbG11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="11" />
+
+            <RadioButton
+                android:id="@+id/rbG12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDate"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edDay"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+
+
+            android:hint="DD"
+            android:inputType="textPersonName" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="/" />
+        <EditText
+            android:id="@+id/edMonth"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+
+
+            android:hint="MM"
+            android:inputType="textPersonName" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="/" />
+        <EditText
+            android:id="@+id/edYear"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+
+
+            android:hint="YYYY"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <EditText
+    android:id="@+id/edEmail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="email"
+    android:inputType="textPersonName"
+    android:layout_below="@+id/edRole"
+    android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/edRole"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/edReenterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/etPassword"
+        android:ems="10"
+        android:hint="Re-enter Password"
+        android:inputType="textPersonName" />
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Submit"
+        android:layout_below="@+id/editText4"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        card_view:cardElevation="7dp"
+        card_view:contentPadding="7dp"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardMaxElevation="7dp">
+
+    <TextView
+        android:id="@+id/tvNames"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+      android:textSize="100dp"
+        android:background="@drawable/card_background"
+        android:text="TextView"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/tvCompletName"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#b59e9e9e"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/tvGradeview"
+
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignBottom="@+id/tvNames"
+            android:layout_alignParentStart="true"
+            android:background="#c69e9e9e"
+            android:text="TextView" />
+    <TextView
+        android:id="@+id/tvId"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignBottom="@+id/tvNames"
+        android:layout_alignParentStart="true"
+        android:background="#c69e9e9e"
+        android:text="TextView" /></android.support.v7.widget.CardView>
+</RelativeLayout>

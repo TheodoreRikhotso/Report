@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.report.ReportActivity">
+
+    <ListView
+        android:id="@+id/lvReport"
+
+       android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvFinalTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Total R0"
+
+
+            />
+
+        <TextView
+            android:id="@+id/tvFinalcomment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Total item"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

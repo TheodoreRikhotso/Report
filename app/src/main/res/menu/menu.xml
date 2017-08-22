@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuTecaher">
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Add Subject" />
+
+    <item
+        android:id="@+id/menu_update"
+        android:icon="@drawable/ic_view_list_black_24dp"
+        android:title="Update Subject" />
+
+    <item
+        android:id="@+id/menu_delete"
+        android:icon="@drawable/ic_announcement_black_24dp"
+        android:title="Delete" />
+
+</menu>
